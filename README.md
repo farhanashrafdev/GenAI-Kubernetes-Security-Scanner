@@ -29,10 +29,10 @@ Before running the scanner, ensure you have the following:
 ## Installation
 
 ### Clone the Repository
-```bash
+```
 git clone https://github.com/farhanashrafdev/k8s-genai-scanner
 cd k8s-genai-scanner
-
+```
 ### Set Up the Python Environment
 ```
 python -m venv venv
