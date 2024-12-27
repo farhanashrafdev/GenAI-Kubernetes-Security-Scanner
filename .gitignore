@@ -1,0 +1,25 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Kubernetes secrets
+*.secret.yaml
+
+# Ignore temporary files
+*.swp
+*.bak
+*.tmp
+
+# Python-specific
+.env

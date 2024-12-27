@@ -1,0 +1,4 @@
+kopf
+kubernetes
+boto3
+tensorflow

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genai-security-scanner
+  namespace: security
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: security-scanner
+  template:
+    metadata:
+      labels:
+        app: security-scanner
+    spec:
+      serviceAccountName: scanner-sa
+      containers:
+      - name: scanner
+        image: your-registry/genai-scanner:latest
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "1"
+        env:
+        - name: AWS_REGION
+          value: "us-east-1"
+        - name: MODEL_ID
+          value: "anthropic.claude-v2"

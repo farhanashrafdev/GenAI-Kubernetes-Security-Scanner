@@ -1,0 +1,18 @@
+# risky-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: risky-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    securityContext:
+      privileged: true
+    volumeMounts:
+    - name: host-vol
+      mountPath: /host
+  volumes:
+  - name: host-vol
+    hostPath:
+      path: /
