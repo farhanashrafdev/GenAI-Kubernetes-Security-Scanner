@@ -48,7 +48,7 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 Make sure your AWS credentials are set up to access Bedrock:
 
-``` aws configure```
+``` aws configure ```
 
 ### You can test the GenAI analyzer independently with a pod specification:
 
